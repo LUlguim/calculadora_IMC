@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script src="js/cerebro.js"></script>
+	<title>IMC</title>
+</head>
+<body>
+	<form onSubmit="return validarform()" name="form" method="POST">
+		<div class="container text-center">
+			<div class=".col-xs-12 .col-md-8">
+				<div>
+				<input id="numpeso" onKeyDown="teclaBaixo1()" type="text" name="numpeso" placeholder="Peso"/>
+				</div>
+
+				<div>
+				<input id="numaltura" onKeyDown="teclaBaixo2()"type="text" name="numaltura" placeholder="Altura"/>
+				</div>
+
+				<div>
+				<input class="btn btn-warning" type="submit" name="btncalcular" value="Calcular"/>
+				</div>
+			</div>
+		</div>
